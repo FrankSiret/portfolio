@@ -1,6 +1,6 @@
 {
   "heading": "Start with the problem.",
-  "subtitle": "I don't optimize for technology adoption. I optimize for the right engineering outcome.",
+  "subtitle": "I don't pick tools because they're popular. I pick them for the right result.",
   "diagram": {
     "stages": [
       { "kind": "single", "node": { "id": "problem", "label": "The Problem" } },

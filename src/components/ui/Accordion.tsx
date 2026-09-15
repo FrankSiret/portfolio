@@ -14,7 +14,7 @@ export function AccordionItem({ header, children, defaultOpen = false, className
   const [isOpen, setIsOpen] = useState(defaultOpen)
 
   return (
-    <div className={cn('rounded-lg border border-border bg-surface', className)}>
+    <div className={cn('rounded-lg border border-border bg-surface hover:border-muted/40', className)}>
       <button
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}

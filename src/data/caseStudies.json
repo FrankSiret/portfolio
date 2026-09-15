@@ -1,6 +1,6 @@
 {
   "heading": "Selected Engineering Challenges",
-  "subtitle": "Case studies drawn from consulting work across regulated, security-sensitive and enterprise domains.",
+  "subtitle": "Case studies from consulting work across regulated, security-sensitive and enterprise domains.",
   "studies": [
     {
       "id": "banking-transaction-platform",
@@ -8,8 +8,8 @@
       "role": "Software Engineer",
       "tags": ["Java", "Spring Boot", "Distributed Systems", "Database Design", "Cloud"],
       "summaryQuote": "Designing transaction flows where correctness matters more than convenience.",
-      "contextNote": "Simplified architecture based on patterns used in enterprise financial and certification systems (drawn from work on a centralized application for ANCERT, Spain). Details intentionally generalized to protect client confidentiality.",
-      "problem": "A national certification authority needed to consolidate a range of manual, paper-driven and fragmented internal processes into a single centralized application, without disrupting operations for the teams already depending on the existing tooling.",
+      "contextNote": "A simplified architecture, based on patterns from enterprise financial and certification systems (drawn from work on a centralized application for ANCERT, Spain). Details are generalized on purpose, to protect client confidentiality.",
+      "problem": "A national certification authority had many manual, paper-based processes spread across different teams. They needed one centralized application — without breaking the workflows those teams already relied on.",
       "constraints": [
         "Transactional consistency across services",
         "High availability during business hours",
@@ -138,19 +138,19 @@
       "decisions": [
         {
           "question": "Why a centralized transaction service instead of letting each module write to the database directly?",
-          "answer": "Funneling every state change through one orchestrator made it possible to enforce consistency rules and auditing in a single place instead of duplicating (and eventually diverging) that logic across modules."
+          "answer": "Sending every state change through one place made it easy to enforce consistency rules and auditing in a single spot — instead of repeating (and slowly breaking) that logic in every module."
         },
         {
           "question": "Why idempotency as its own concern instead of relying on clients not to retry?",
-          "answer": "Retries are guaranteed to happen at scale — network timeouts, double-clicks, mobile connectivity drops. An idempotency key per request meant a retried transaction replayed the original result instead of creating a duplicate."
+          "answer": "Retries happen at scale, no matter what: network timeouts, double-clicks, dropped connections. An idempotency key per request meant a retried transaction just returned the original result, instead of creating a duplicate."
         },
         {
           "question": "Why an event stream alongside the synchronous path to the database?",
-          "answer": "The transaction itself needed a synchronous, consistent write. But audit, notification and settlement only needed eventual consistency — decoupling them through events kept the critical path short and let each consumer fail independently."
+          "answer": "The transaction itself needed a fast, consistent write. But audit, notification and settlement could happen a bit later. Using events for those kept the main path fast, and let each of them fail on its own without blocking the rest."
         },
         {
           "question": "What happens when an external settlement provider fails?",
-          "answer": "The transaction is already durably committed before settlement is attempted, so a provider failure triggers a retry with backoff, then a timeout into a compensating flow and reconciliation — it never leaves the ledger in an ambiguous state."
+          "answer": "The transaction is already saved before settlement is attempted. So if the provider fails, the system retries with a delay, then falls back to a compensating flow and reconciliation. The ledger is never left in an unclear state."
         }
       ]
     },
@@ -160,8 +160,8 @@
       "role": "Software Engineer",
       "tags": ["Distributed Workflows", "Security", "Authentication", "Digital Signatures"],
       "summaryQuote": "Long-running workflows where every step needs to be provably correct.",
-      "contextNote": "Drawn from work in the certification and digital-signature domain (ANCERT, Spain) — details generalized to protect client confidentiality.",
-      "problem": "Documents needed to move through identity verification, signature collection and legal auditability without losing state if a user dropped off mid-flow, and without giving up cryptographic guarantees for the sake of convenience.",
+      "contextNote": "Drawn from work in the certification and digital-signature domain (ANCERT, Spain). Details are generalized to protect client confidentiality.",
+      "problem": "A document needed to go through identity checks, get signed, and stay fully auditable. If a user dropped off mid-way, the process couldn't lose its place — and it couldn't cut corners on cryptographic security just for convenience.",
       "constraints": [
         "Reliable identity verification",
         "Cryptographic signature validity",
@@ -225,11 +225,11 @@
       "decisions": [
         {
           "question": "Why make every step idempotent instead of relying on the client to avoid duplicate requests?",
-          "answer": "Network retries and user double-clicks are guaranteed to happen at scale. Idempotency keys per step meant a retried request just replayed the same result instead of creating a second, conflicting signature."
+          "answer": "Network retries and double-clicks happen all the time at scale. An idempotency key per step meant a retried request just got back the same result, instead of creating a second, conflicting signature."
         },
         {
           "question": "Why keep the audit trail as an append-only log instead of updating a status field?",
-          "answer": "Legal auditability requires reconstructing exactly what happened and when, not just the current state — an append-only trail preserves that history even if a later step corrects an earlier one."
+          "answer": "Legal audits need to show exactly what happened and when — not just the current state. An append-only trail keeps that full history, even if a later step corrects an earlier one."
         }
       ]
     },
@@ -239,8 +239,8 @@
       "role": "Software Engineer",
       "tags": ["Keycloak", "OAuth2 / OIDC", "Wallet Authentication", "Security"],
       "summaryQuote": "Letting users authenticate with a wallet without reinventing identity management.",
-      "contextNote": "A representative architecture drawn from identity and authentication work across consulting engagements, generalized to protect client confidentiality.",
-      "problem": "An application needed to support wallet-based authentication alongside conventional login, without building a custom identity provider from scratch or compromising on standard protocols.",
+      "contextNote": "A representative architecture drawn from identity and authentication work across several consulting projects, generalized to protect client confidentiality.",
+      "problem": "An application needed to support login with a crypto wallet, alongside normal login. It couldn't build a custom identity system from scratch, and it couldn't cut corners on standard protocols.",
       "constraints": [
         "Standards-based identity (OAuth2 / OIDC)",
         "Wallet signature verification",
@@ -293,11 +293,11 @@
       "decisions": [
         {
           "question": "Why Keycloak instead of a hand-rolled identity provider?",
-          "answer": "Identity is a solved problem with sharp edges (token lifecycle, revocation, standards compliance). Keycloak let the team extend a battle-tested OIDC provider with a custom wallet authentication flow instead of owning all of that surface area."
+          "answer": "Identity looks simple but has many tricky details: token lifecycles, revocation, standards compliance. Keycloak is a proven OIDC provider, so the team could add a custom wallet login flow on top of it — instead of building and maintaining all of that from scratch."
         },
         {
           "question": "Why treat wallet auth as another Keycloak authentication flow instead of a parallel system?",
-          "answer": "Keeping wallet login inside the same identity provider meant every downstream service still trusted one token format and one session model, regardless of how the user proved who they were."
+          "answer": "Keeping wallet login inside the same identity provider meant every other service still trusted one token format and one session model — no matter how the user proved who they were."
         }
       ]
     }

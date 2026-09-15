@@ -3,7 +3,7 @@ import { ExternalLink } from 'lucide-react'
 
 export function AwardsTable({ awards }: { awards: ICPCAward[] }) {
   return (
-    <div className="overflow-x-auto rounded-lg border border-border">
+    <div className="overflow-x-auto rounded-lg border-border">
       <table className="w-full min-w-[640px] border-collapse text-left text-sm">
         <thead>
           <tr className="border-b border-border bg-surface text-xs uppercase tracking-wide text-muted">

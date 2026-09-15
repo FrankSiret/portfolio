@@ -20,7 +20,7 @@
       "id": "frontend",
       "title": "Frontend",
       "icon": "code",
-      "description": "Shipping interfaces engineered with the same rigor as the backend behind them.",
+      "description": "Building interfaces with the same care and quality as the backend behind them.",
       "tags": ["React", "TypeScript", "State Management", "Component Architecture", "Tailwind CSS"]
     },
     {
@@ -34,7 +34,7 @@
       "id": "problem-solving",
       "title": "Problem Solving",
       "icon": "target",
-      "description": "The competitive programming mindset applied to production constraints.",
+      "description": "The competitive programming mindset, applied to real production problems.",
       "tags": ["Algorithms", "Data Structures", "Mathematics", "Optimization", "ICPC"]
     }
   ]

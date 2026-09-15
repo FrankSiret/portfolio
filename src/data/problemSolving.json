@@ -1,6 +1,6 @@
 {
   "heading": "The scale changed. The reasoning stayed.",
-  "subtitle": "In competitive programming, the problem might be a graph with a two-second time limit. In production, the graph is a distributed system with millions of requests, partial failures and business constraints. The reasoning is the same: understand the problem, identify the constraints, choose the right solution.",
+  "subtitle": "In competitive programming, the problem might be a graph with a two-second time limit. In production, the graph is a distributed system handling millions of requests, with failures and business rules to deal with. But the process is the same: understand the problem, identify the constraints, choose the right solution.",
   "chain": {
     "stages": [
       {

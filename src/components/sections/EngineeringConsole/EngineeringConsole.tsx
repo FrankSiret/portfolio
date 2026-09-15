@@ -30,7 +30,7 @@ export function EngineeringConsole() {
             transition={{ duration: 0.2, ease: 'easeOut' }}
             className="fixed bottom-20 right-5 z-30 w-[calc(100vw-2.5rem)] max-w-sm"
           >
-            <Terminal>
+            <Terminal onClose={close}>
               <p className="text-accent">{consoleContent.commandLabel}</p>
               <div className="mt-3 flex flex-col gap-3 text-muted">
                 <div>
