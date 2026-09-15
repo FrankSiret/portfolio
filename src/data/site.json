@@ -18,7 +18,7 @@
     { "label": "Stack Overflow", "url": "https://stackoverflow.com/users/11278974/franksiret", "icon": "stack-overflow" },
     { "label": "Instagram", "url": "https://www.instagram.com/franksiret/", "icon": "instagram" }
   ],
-  "cvUrl": "/cv-frank-rodriguez-siret.pdf",
+  "cvUrl": "cv-frank-rodriguez-siret.pdf",
   "ctaLabel": "Let's talk",
   "ctaHref": "mailto:frank.siret@gmail.com"
 }
