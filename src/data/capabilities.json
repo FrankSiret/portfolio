@@ -1,0 +1,41 @@
+{
+  "heading": "What I do",
+  "subtitle": "Engineering Capabilities",
+  "categories": [
+    {
+      "id": "backend",
+      "title": "Backend Engineering",
+      "icon": "server",
+      "description": "Building services that stay correct under load, failure and change.",
+      "tags": ["Java", "Spring Boot", "Distributed Systems", "REST", "Messaging", "Concurrency", "Node"]
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture",
+      "icon": "layers",
+      "description": "Turning ambiguous requirements into systems that scale and stay maintainable.",
+      "tags": ["System Design", "Domain Modeling", "Database Design", "Design Patterns", "Scalability"]
+    },
+    {
+      "id": "frontend",
+      "title": "Frontend",
+      "icon": "code",
+      "description": "Shipping interfaces engineered with the same rigor as the backend behind them.",
+      "tags": ["React", "TypeScript", "State Management", "Component Architecture", "Tailwind CSS"]
+    },
+    {
+      "id": "infrastructure",
+      "title": "Infrastructure",
+      "icon": "cloud",
+      "description": "Making sure what works locally keeps working in production.",
+      "tags": ["Cloud", "Docker", "CI/CD", "Observability", "Security", "Jenkins"]
+    },
+    {
+      "id": "problem-solving",
+      "title": "Problem Solving",
+      "icon": "target",
+      "description": "The competitive programming mindset applied to production constraints.",
+      "tags": ["Algorithms", "Data Structures", "Mathematics", "Optimization", "ICPC"]
+    }
+  ]
+}

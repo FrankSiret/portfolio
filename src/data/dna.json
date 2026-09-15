@@ -1,0 +1,36 @@
+{
+  "heading": "How I think",
+  "subtitle": "Engineering DNA",
+  "principles": [
+    {
+      "id": "complexity",
+      "title": "Complexity",
+      "description": "I enjoy problems where the obvious solution isn't good enough."
+    },
+    {
+      "id": "performance",
+      "title": "Performance",
+      "description": "Optimize where it matters: CPU, memory, I/O, latency and infrastructure cost."
+    },
+    {
+      "id": "simplicity",
+      "title": "Simplicity",
+      "description": "Clean code isn't about fewer lines. It's about fewer reasons for things to break."
+    },
+    {
+      "id": "adaptability",
+      "title": "Adaptability",
+      "description": "Different domains, clients, teams and constraints require different engineering decisions."
+    },
+    {
+      "id": "ownership",
+      "title": "Ownership",
+      "description": "I don't just implement designs. I challenge them, improve them and take responsibility for the outcome."
+    },
+    {
+      "id": "pressure",
+      "title": "Pressure",
+      "description": "Production incidents, hard deadlines and ambiguous requirements are part of engineering."
+    }
+  ]
+}

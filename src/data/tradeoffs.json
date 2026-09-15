@@ -1,0 +1,42 @@
+{
+  "heading": "Engineering Trade-offs",
+  "subtitle": "Not tech opinions — decisions, and the trade-offs accepted with them.",
+  "items": [
+    {
+      "id": "kafka-vs-sync",
+      "title": "Kafka vs synchronous communication",
+      "question": "When is an event bus worth the added complexity?",
+      "answer": "When downstream consumers can tolerate eventual consistency and the producer shouldn't be blocked by, or coupled to, their availability. If the caller needs an immediate answer to proceed, a synchronous call is simpler and easier to reason about — the moment you need fan-out, replay or independent scaling of consumers, an event bus starts paying for itself."
+    },
+    {
+      "id": "sql-vs-nosql",
+      "title": "SQL vs NoSQL",
+      "question": "Why default to a relational database?",
+      "answer": "Most business domains have relationships and invariants worth enforcing at the data layer, not just in application code. I reach for NoSQL when the access pattern is genuinely document- or key-based, when schema flexibility outweighs the value of constraints, or when horizontal write scale is the actual bottleneck — not by default."
+    },
+    {
+      "id": "monolith-vs-microservices",
+      "title": "Monolith vs microservices",
+      "question": "When do microservices actually pay off?",
+      "answer": "When independent teams need to deploy independently, or a specific component's scaling and reliability needs genuinely diverge from the rest of the system. Splitting a system before that pressure exists usually just trades one kind of complexity (a large codebase) for a worse one (distributed failure modes) without a matching benefit."
+    },
+    {
+      "id": "cache-vs-database",
+      "title": "Cache vs database",
+      "question": "What earns a cache instead of just hitting the database?",
+      "answer": "Read-heavy, latency-sensitive paths where the data tolerates being slightly stale. The trade-off is always invalidation complexity, so I only add a cache once I can point at the specific query or endpoint that needs it, with a clear invalidation strategy already decided."
+    },
+    {
+      "id": "consistency-vs-availability",
+      "title": "Consistency vs availability",
+      "question": "How do you decide where a system sits on that spectrum?",
+      "answer": "By asking what a stale or unavailable read actually costs in that specific domain. A financial transaction favors consistency even at the cost of availability during a partition; a product catalog favors availability, because a slightly outdated price is a smaller problem than the page failing to load."
+    },
+    {
+      "id": "rest-vs-event-driven",
+      "title": "REST vs event-driven",
+      "question": "How do you choose between a request/response API and an event-driven flow?",
+      "answer": "REST when a client needs a direct answer to a specific question. Event-driven when the goal is to notify multiple, decoupled consumers that something happened without the producer needing to know who's listening — the two usually coexist in the same system rather than compete."
+    }
+  ]
+}

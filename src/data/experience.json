@@ -1,0 +1,177 @@
+{
+  "heading": "Career Timeline",
+  "entries": [
+    {
+      "id": "peoplewalking",
+      "role": "Software Engineer",
+      "company": "Peoplewalking",
+      "companyUrl": "https://www.peoplewalking.com/",
+      "period": {
+        "start": "Mar 2021",
+        "end": "Present"
+      },
+      "bullets": [
+        "Leading the team for client Zertiban, coordinating daily stand-ups and delivering tasks collaboratively within a great team.",
+        "Led the technical design and development of multiple features for Xpertopolis, ensuring high-quality products were delivered on-time and collaborating effectively with cross-functional teams.",
+        "Played a key role in the design and development of a centralized application for the Agency of Certification, ANCERT, in Spain, including a mortgage portal (portal hipotecario). Worked collaboratively with cross-functional teams to deliver a comprehensive solution that streamlined operations and enhanced efficiency across the organization.",
+        "Built a demo MVP, in collaboration with Procivis, for digital certification and deed signing (escrituras) using wallet-based authentication and signing.",
+        "Led the design and development of a user-friendly app for Navarra Clinic University, exceeding client expectations by delivering a highly functional solution.",
+        "Managed complex design projects for corporate clients, ensuring timely delivery and adherence to project specifications.",
+        "Automated software development processes including building, testing and deployment, following CI/CD guidelines using Jenkins.",
+        "Conducted quality assurance tests to optimize usability and enhance user experience.",
+        "Facilitated React JS boot camps for junior developers, providing mentorship and guidance.",
+        "Developed reusable components following React's principles, ensuring consistency and maintainability across multiple projects."
+      ],
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "Docker",
+        "React JS",
+        "Angular",
+        "TypeScript",
+        "Node",
+        "Bootstrap 4",
+        "Ant Design",
+        "Job Runr",
+        "PostgreSQL",
+        "MySQL",
+        "Design Patterns",
+        "Trello",
+        "Wallet Authentication",
+        "Digital Signatures",
+        "Procivis"
+      ]
+    },
+    {
+      "id": "cognicore",
+      "role": "Java Developer",
+      "company": "Cognicore",
+      "period": {
+        "start": "Aug 2023",
+        "end": "Nov 2023"
+      },
+      "bullets": [
+        "Worked at the startup Human Data Manager developing several microservices for the Cognicore application.",
+        "Produced daily progress reports using Trello, contributing to the success of the project through effective collaboration."
+      ],
+      "tech": [
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "Docker",
+        "Terraformer"
+      ]
+    },
+    {
+      "id": "matcom-grader",
+      "role": "Python Developer",
+      "company": "Matcom Grader",
+      "companyUrl": "https://matcomgrader.com/",
+      "period": {
+        "start": "Aug 2022",
+        "end": "Dec 2022"
+      },
+      "bullets": [
+        "Enhanced platform design and functionalities, optimizing code for a smoother user experience.",
+        "Collaborated closely with a team of developers, contributing to strategic decisions and tackling technical challenges.",
+        "Migrated problem writing to Markdown and created a custom logging module.",
+        "Played a key role in successfully promoting the platform, achieving high acceptance among contestants and judges in the Caribbean region."
+      ],
+      "tech": [
+        "Python",
+        "Django",
+        "React JS",
+        "JavaScript",
+        "PostgreSQL",
+        "Bootstrap"
+      ]
+    },
+    {
+      "id": "icpc-executive-director",
+      "role": "ICPC Executive Director",
+      "company": "Universidad de Oriente",
+      "period": {
+        "start": "Nov 2021",
+        "end": "Mar 2022"
+      },
+      "bullets": [
+        "Oversaw preparation and successful execution of ICPC contests.",
+        "Demonstrated strong leadership skills in overseeing teams and coordinating people effectively."
+      ],
+      "tech": []
+    },
+    {
+      "id": "icpc-assistant-director",
+      "role": "ICPC Assistant Director",
+      "company": "Universidad de Oriente",
+      "period": {
+        "start": "Sep 2019",
+        "end": "Nov 2021"
+      },
+      "bullets": [
+        "Led teams during the preparation of the ICPC contests."
+      ],
+      "tech": []
+    },
+    {
+      "id": "cs-professor",
+      "role": "Computer Science Professor",
+      "company": "Universidad de Oriente",
+      "period": {
+        "start": "Sep 2019",
+        "end": "Mar 2022"
+      },
+      "bullets": [
+        "Taught Logic Math and Data Structures and Algorithms courses.",
+        "Received the annual CITMA Award for Young Researchers in 2019, recognizing excellence in research and contributions to the field of Computer Science."
+      ],
+      "tech": []
+    },
+    {
+      "id": "freelance",
+      "role": "Freelance Full Stack Developer",
+      "company": "Freelance",
+      "period": {
+        "start": "Oct 2020",
+        "end": "Mar 2021"
+      },
+      "bullets": [
+        "Developed responsive and user-friendly websites for small businesses.",
+        "Guided digital marketing strategy for positioning the business on the web.",
+        "Worked in a team of two using agile methodologies (XP) to ensure timely delivery and high-quality results.",
+        "Communicated effectively with clients throughout the development process, providing regular updates and soliciting feedback."
+      ],
+      "tech": [
+        "React JS",
+        "Bootstrap 4",
+        "API Platform",
+        "Swagger",
+        "MySQL"
+      ]
+    },
+    {
+      "id": "biofisica-medica",
+      "role": "C++ Developer",
+      "company": "Centro de Biofísica Médica",
+      "period": {
+        "start": "Sep 2017",
+        "end": "Jun 2021"
+      },
+      "bullets": [
+        "Contributed to the design and development of Imagis, a medical imaging software.",
+        "Provided guidance and support to junior developers, helping to improve their knowledge of C++.",
+        "Developed more than 10 features in the areas of design, report management, transmission, visualization and image segmentation."
+      ],
+      "tech": [
+        "C++",
+        "Java",
+        "VTK",
+        "ITK",
+        "DCMTK",
+        "Qt Framework",
+        "Lucene",
+        "Information Retrieval"
+      ]
+    }
+  ]
+}

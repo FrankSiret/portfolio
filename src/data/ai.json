@@ -1,0 +1,40 @@
+{
+  "heading": "Engineering with AI",
+  "tagline": "Use AI aggressively. Trust it carefully.",
+  "diagram": {
+    "stages": [
+      { "kind": "single", "node": { "id": "engineering", "label": "Engineering" } },
+      { "kind": "single", "node": { "id": "ai", "label": "AI" }, "emphasized": true },
+      {
+        "kind": "fan",
+        "nodes": [
+          { "id": "explore", "label": "Explore" },
+          { "id": "build", "label": "Build" },
+          { "id": "verify", "label": "Verify" }
+        ]
+      },
+      { "kind": "converge", "node": { "id": "engineering-judgment", "label": "Engineering Judgment" }, "emphasized": true }
+    ]
+  },
+  "capabilities": [
+    {
+      "id": "explore",
+      "title": "Explore",
+      "tagline": "Reduce the time it takes to understand something unfamiliar.",
+      "flow": ["Large codebase", "AI-assisted exploration", "Architecture map", "Human verification"]
+    },
+    {
+      "id": "build",
+      "title": "Build",
+      "tagline": "Compress implementation cycles while keeping engineering responsibility human.",
+      "flow": ["Requirement", "Architecture", "AI → code / tests / docs", "Human review"]
+    },
+    {
+      "id": "verify",
+      "title": "Verify",
+      "tagline": "AI output is a hypothesis, not a conclusion.",
+      "flow": ["AI generated", "Tests / static analysis", "Security & performance review", "Human approval"]
+    }
+  ],
+  "closingQuote": "The goal isn't to write more code. The goal is to solve better problems, faster."
+}

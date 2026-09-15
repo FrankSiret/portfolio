@@ -1,0 +1,13 @@
+{
+  "commandLabel": "$ ./engineer --profile",
+  "role": "Senior Backend Engineer / Tech Lead",
+  "primary": ["Java", "Distributed Systems", "Architecture"],
+  "secondary": ["React", "C++", "Cloud"],
+  "mindset": [
+    "Algorithms > Frameworks",
+    "Constraints > Assumptions",
+    "Simplicity > Cleverness",
+    "Reliability > Hype"
+  ],
+  "status": "Available for interesting problems."
+}

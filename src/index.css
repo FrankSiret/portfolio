@@ -1,0 +1,97 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+@import '@fontsource/jetbrains-mono/600.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* RGB triplets (not hex) so Tailwind's opacity modifiers (e.g. bg-accent/30) work. */
+  --color-bg: 13 15 18;
+  --color-surface: 20 23 27;
+  --color-surface-hover: 25 29 34;
+  --color-border: 31 35 41;
+  --color-text: 230 232 235;
+  --color-muted: 154 161 171;
+  --color-accent: 0 255 156;
+  color-scheme: dark;
+}
+
+/* System preference: apply light palette when the OS prefers light, unless the user has explicitly chosen dark. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) {
+    --color-bg: 250 250 251;
+    --color-surface: 255 255 255;
+    --color-surface-hover: 243 244 246;
+    --color-border: 226 229 233;
+    --color-text: 20 23 27;
+    --color-muted: 91 100 114;
+    --color-accent: 14 143 92;
+    color-scheme: light;
+  }
+}
+
+/* Explicit user choice, via the theme toggle — wins over system preference in both directions. */
+:root[data-theme='light'] {
+  --color-bg: 250 250 251;
+  --color-surface: 255 255 255;
+  --color-surface-hover: 243 244 246;
+  --color-border: 226 229 233;
+  --color-text: 20 23 27;
+  --color-muted: 91 100 114;
+  --color-accent: 14 143 92;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --color-bg: 13 15 18;
+  --color-surface: 20 23 27;
+  --color-surface-hover: 25 29 34;
+  --color-border: 31 35 41;
+  --color-text: 230 232 235;
+  --color-muted: 154 161 171;
+  --color-accent: 0 255 156;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-text));
+  font-family: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgb(var(--color-accent));
+  color: rgb(var(--color-bg));
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--color-bg));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-border));
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--color-muted));
+}

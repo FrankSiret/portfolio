@@ -1,0 +1,43 @@
+{
+  "heading": "Outside the stack",
+  "subtitle": "What I do when I'm not engineering systems — well, mostly.",
+  "hobbies": [
+    {
+      "id": "rubiks-cube",
+      "icon": "puzzle",
+      "title": "Rubik's Cube",
+      "quote": "Because apparently solving one optimization problem wasn't enough.",
+      "interactive": true
+    },
+    {
+      "id": "coffee",
+      "icon": "coffee",
+      "title": "Coffee",
+      "quote": "Most architecture decisions are better after coffee."
+    },
+    {
+      "id": "sushi",
+      "icon": "fish",
+      "title": "Sushi",
+      "quote": "A completely unscientific appreciation for well-designed food."
+    },
+    {
+      "id": "travel",
+      "icon": "plane",
+      "title": "Travel",
+      "quote": "Different places, different systems, different perspectives."
+    },
+    {
+      "id": "music",
+      "icon": "music",
+      "title": "Music",
+      "quote": "The soundtrack behind the code."
+    },
+    {
+      "id": "potterhead",
+      "icon": "wand",
+      "title": "Potterhead",
+      "quote": "Yes, there is probably a Hogwarts house involved."
+    }
+  ]
+}

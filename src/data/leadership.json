@@ -1,0 +1,83 @@
+{
+  "heading": "I lead through technical decisions.",
+  "subtitle": "Engineering Leadership",
+  "quote": "I don't lead by having all the answers. I lead by making the right questions visible, turning ambiguity into decisions, and helping the team execute with confidence.",
+  "bullets": [
+    "Architecture decisions",
+    "Technical direction",
+    "Design reviews",
+    "Mentoring",
+    "Code reviews",
+    "Incident resolution",
+    "Stakeholder communication",
+    "Breaking down ambiguity",
+    "Delivery under deadlines"
+  ],
+  "diagram": {
+    "center": {
+      "id": "tech-lead",
+      "label": "Tech Lead",
+      "detail": {
+        "concerns": ["Clarity", "Decisions", "Alignment", "Ownership"]
+      }
+    },
+    "ring": [
+      {
+        "id": "problem",
+        "label": "Problem",
+        "detail": {
+          "responsibilities": ["Starts from an ambiguous business need, not a ready-made specification"],
+          "concerns": ["Ambiguity", "Scope"]
+        }
+      },
+      {
+        "id": "understand",
+        "label": "Understand",
+        "detail": {
+          "responsibilities": ["Surfaces requirements, constraints, risks and trade-offs before committing to a direction"],
+          "concerns": ["Requirements", "Constraints", "Risk"]
+        }
+      },
+      {
+        "id": "design",
+        "label": "Design",
+        "detail": {
+          "responsibilities": ["Turns the understood problem into a concrete system shape"],
+          "concerns": ["System Design", "Domain Modeling", "Data Architecture", "Security", "Scalability"]
+        }
+      },
+      {
+        "id": "align",
+        "label": "Align",
+        "detail": {
+          "responsibilities": ["Keeps business, product, engineering and infrastructure moving in the same direction"],
+          "concerns": ["Business", "Product", "Engineering", "Infrastructure"]
+        }
+      },
+      {
+        "id": "build",
+        "label": "Build",
+        "detail": {
+          "responsibilities": ["Turns the design into working software the team can ship"],
+          "concerns": ["Implementation", "Code Review", "Testing", "CI/CD", "Deployment"]
+        }
+      },
+      {
+        "id": "operate",
+        "label": "Operate",
+        "detail": {
+          "responsibilities": ["Keeps the system observable and healthy once it's live"],
+          "concerns": ["Metrics", "Logs", "Traces", "Incidents", "Root Cause Analysis"]
+        }
+      },
+      {
+        "id": "learn",
+        "label": "Learn",
+        "detail": {
+          "responsibilities": ["Feeds what production actually taught us back into the next problem"],
+          "concerns": ["Retrospection", "Continuous Improvement"]
+        }
+      }
+    ]
+  }
+}

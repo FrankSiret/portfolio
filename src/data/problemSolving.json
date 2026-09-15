@@ -1,0 +1,202 @@
+{
+  "heading": "The scale changed. The reasoning stayed.",
+  "subtitle": "In competitive programming, the problem might be a graph with a two-second time limit. In production, the graph is a distributed system with millions of requests, partial failures and business constraints. The reasoning is the same: understand the problem, identify the constraints, choose the right solution.",
+  "chain": {
+    "stages": [
+      {
+        "kind": "single",
+        "node": {
+          "id": "icpc",
+          "label": "ICPC"
+        },
+        "emphasized": true
+      },
+      {
+        "kind": "fan",
+        "nodes": [
+          {
+            "id": "algorithms",
+            "label": "Algorithms"
+          },
+          {
+            "id": "mathematics",
+            "label": "Mathematics"
+          },
+          {
+            "id": "data-structures",
+            "label": "Data Structures"
+          }
+        ]
+      },
+      {
+        "kind": "converge",
+        "node": {
+          "id": "problem-solving-hub",
+          "label": "Problem Solving"
+        }
+      },
+      {
+        "kind": "single",
+        "node": {
+          "id": "transferable-skills",
+          "label": "Transferable Engineering Skills"
+        },
+        "emphasized": true
+      },
+      {
+        "kind": "fan",
+        "nodes": [
+          {
+            "id": "complexity",
+            "label": "Complexity"
+          },
+          {
+            "id": "modeling",
+            "label": "Modeling"
+          },
+          {
+            "id": "optimization-skill",
+            "label": "Optimization"
+          }
+        ]
+      },
+      {
+        "kind": "parallel",
+        "nodes": [
+          {
+            "id": "performance",
+            "label": "Performance"
+          },
+          {
+            "id": "architecture",
+            "label": "Architecture"
+          },
+          {
+            "id": "resource-usage",
+            "label": "Resource Usage"
+          }
+        ]
+      },
+      {
+        "kind": "converge",
+        "node": {
+          "id": "production-engineering",
+          "label": "Production Engineering"
+        },
+        "emphasized": true
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "leetcode",
+      "title": "LeetCode",
+      "quote": "Solving problems for fun, not because someone asked me to.",
+      "linkLabel": "View solutions",
+      "url": "https://leetcode.com/u/FrankSiret/",
+      "stats": [
+        {
+          "label": "Problems solved",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "codeforces",
+      "title": "Codeforces",
+      "quote": "Algorithms under pressure, measured in execution time.",
+      "linkLabel": "View profile",
+      "url": null,
+      "stats": [
+        {
+          "label": "Rating",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "icpc",
+      "title": "ICPC",
+      "quote": "University competitions · Multiple recognitions, including two 1st place finishes at the ICPC Caribbean Challenger.",
+      "linkLabel": "View awards",
+      "url": "#icpc-awards",
+      "stats": [
+        {
+          "label": "Caribbean Finals appearances",
+          "value": 4
+        }
+      ]
+    }
+  ],
+  "icpcAwardsHeading": "ICPC Awards",
+  "icpcAwards": [
+    {
+      "award": "6th ICPC Challenger \"Battles in the Caribbean II\" 🥇",
+      "url": "https://coj-forum.uci.cu/viewtopic.php?f=105&t=3603",
+      "date": "Nov 2018",
+      "location": "UCI (Universidad de las Ciencias Informáticas)",
+      "place": "1st place",
+      "team": "Mirage Team"
+    },
+    {
+      "award": "2018 ICPC Caribbean Finals",
+      "url": "https://icpc.baylor.edu/regionals/finder/caribfinals-2018/standings",
+      "date": "Nov 2018",
+      "location": "UCI (Universidad de las Ciencias Informáticas)",
+      "place": "14th place",
+      "team": "Mirage Team"
+    },
+    {
+      "award": "5th ICPC Challenger \"Connect 4\" 🥇",
+      "url": "https://coj-forum.uci.cu/viewtopic.php?f=77&t=3300&p=5077",
+      "date": "Nov 2017",
+      "location": "UCLV (Universidad Central Marta Abreu de las Villas)",
+      "place": "1st place",
+      "team": "A-SAO Team"
+    },
+    {
+      "award": "2017 ICPC Caribbean Finals",
+      "url": "https://icpc.baylor.edu/regionals/finder/CF-2017/standings",
+      "date": "Nov 2017",
+      "location": "UCLV (Universidad Central Marta Abreu de las Villas)",
+      "place": "13th place",
+      "team": "A-SAO Team"
+    },
+    {
+      "award": "2015 ACM-ICPC Caribbean Finals",
+      "url": "https://icpc.baylor.edu/regionals/finder/CF-2015/standings",
+      "date": "Nov 2015",
+      "location": "UCI (Universidad de las Ciencias Informáticas)",
+      "place": "20th place",
+      "team": "A-SAO Team"
+    },
+    {
+      "award": "2014 ACM-ICPC Caribbean Finals",
+      "url": "https://icpc.baylor.edu/regionals/finder/CF-2014/standings",
+      "date": "Nov 2014",
+      "location": "UCI (Universidad de las Ciencias Informáticas)",
+      "place": "34th place",
+      "team": "A-SAO Team"
+    }
+  ],
+  "comparisonTagline": "A problem doesn't need to be large to be hard.",
+  "comparisons": [
+    {
+      "algorithm": "Time complexity",
+      "production": "Latency"
+    },
+    {
+      "algorithm": "Memory limit",
+      "production": "Resource usage"
+    },
+    {
+      "algorithm": "Correctness",
+      "production": "Data integrity"
+    },
+    {
+      "algorithm": "Edge cases",
+      "production": "Failure modes"
+    }
+  ],
+  "closingQuote": "Different problems. Same discipline of thought."
+}

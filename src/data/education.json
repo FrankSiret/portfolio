@@ -1,0 +1,96 @@
+{
+  "heading": "The foundations behind the engineering",
+  "subtitle": "Education",
+  "tagline": "Before frameworks, there were fundamentals.",
+  "degrees": [
+    {
+      "id": "harbour-space",
+      "title": "Master's degree in Computer Science",
+      "institution": "Harbour.Space - Spain",
+      "institutionUrl": "https://harbour.space/",
+      "period": { "start": "May 2024", "end": "Oct 2024" },
+      "honors": ["Completed graduate-level coursework covering advanced topics across multiple disciplines."]
+    },
+    {
+      "id": "universidad-de-oriente",
+      "title": "Bachelor's degree in Computer Science",
+      "institution": "Universidad de Oriente - Cuba",
+      "period": { "start": "Sep 2014", "end": "Jun 2019" },
+      "honors": [
+        "Graduated with Gold Title and Scientific Merit Award.",
+        "Ranked among the top students of the 2019 class.",
+        "Participated in several scientific events related to Computer Science.",
+        "Completed a degree thesis on Information Retrieval."
+      ]
+    }
+  ],
+  "constellation": {
+    "center": { "id": "bsc-cs", "label": "BSc · Computer Science" },
+    "ring": [
+      {
+        "id": "math-foundations",
+        "label": "Mathematical Foundations",
+        "sublabel": "Jan 2020",
+        "detail": {
+          "responsibilities": ["Logic", "Discrete Mathematics", "Formal Reasoning", "Computation"],
+          "concerns": ["Algorithms", "System Modeling", "Optimization"]
+        }
+      },
+      {
+        "id": "programming-languages",
+        "label": "Programming Languages",
+        "sublabel": "Mar 2020",
+        "detail": {
+          "responsibilities": ["Paradigms", "Abstraction", "Type Systems", "Language Design"],
+          "concerns": ["Clean Architecture", "API Design", "Domain Modeling", "Code Quality"]
+        }
+      },
+      {
+        "id": "computer-networks",
+        "label": "Computer Networks",
+        "sublabel": "Oct 2020",
+        "detail": {
+          "responsibilities": ["Protocols", "Communication", "Latency", "Reliability"],
+          "concerns": ["Distributed Systems", "APIs", "Cloud Infrastructure", "Performance"]
+        }
+      },
+      {
+        "id": "digital-image-processing",
+        "label": "Digital Image Processing",
+        "sublabel": "Jan 2021",
+        "detail": {
+          "responsibilities": ["Signals", "Transformations", "Algorithms", "Data"],
+          "concerns": ["Computer Vision", "Signal Processing"]
+        }
+      },
+      {
+        "id": "icpc",
+        "label": "Competitive Programming",
+        "sublabel": "ICPC",
+        "detail": {
+          "responsibilities": [
+            "A university competition, not a degree — years of algorithmic training under strict time limits",
+            "Team-based competitive problem solving"
+          ],
+          "concerns": ["Algorithms", "Optimization", "Production Engineering"]
+        }
+      }
+    ]
+  },
+  "mindsetFlow": ["Foundations", "Reasoning", "Engineering"],
+  "closingQuote": "Frameworks change. Fundamentals compound.",
+  "credentialsHeading": "Credentials",
+  "certificates": [
+    { "title": "International Collegiate Programming Contest", "issuer": "ICPC", "url": "https://icpc.global/ICPCID/PC3CPJXDSYEJ" },
+    { "title": "Claude Code in Action", "issuer": "Anthropic", "date": "Apr 2025", "url": "https://verify.skilljar.com/c/7sfod54t6ahw" },
+    { "title": "Flutter & Dart Certificate", "issuer": "Udemy", "date": "Apr 2024", "url": "http://ude.my/UC-de955e33-0335-494a-80a5-70e13119ecfe" },
+    { "title": "Problem Solving Certificate", "issuer": "HackerRank", "date": "Nov 2020", "url": "https://www.hackerrank.com/certificates/b2af17430ead" },
+    { "title": "React Certificate", "issuer": "HackerRank", "date": "Dec 2020", "url": "https://www.hackerrank.com/certificates/9f17f859dd0d" },
+    { "title": "JavaScript Certificate", "issuer": "HackerRank", "date": "Apr 2022", "url": "https://www.hackerrank.com/certificates/b602af01b333" },
+    { "title": "EF SET English Certificate (B2)", "issuer": "EF Standard English Test", "date": "Feb 2023", "url": "https://www.efset.org/cert/BUbsr5" }
+  ],
+  "languages": [
+    { "language": "Spanish", "level": "C2 — Native proficiency" },
+    { "language": "English", "level": "B2 — Professional working proficiency" }
+  ]
+}

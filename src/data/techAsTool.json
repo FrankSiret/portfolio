@@ -1,0 +1,82 @@
+{
+  "heading": "Start with the problem.",
+  "subtitle": "I don't optimize for technology adoption. I optimize for the right engineering outcome.",
+  "diagram": {
+    "stages": [
+      { "kind": "single", "node": { "id": "problem", "label": "The Problem" } },
+      {
+        "kind": "single",
+        "node": {
+          "id": "constraints",
+          "label": "Constraints",
+          "detail": {
+            "concerns": ["Performance", "Security", "Consistency", "Cost", "Time to market"]
+          }
+        }
+      },
+      {
+        "kind": "fan",
+        "nodes": [
+          { "id": "performance", "label": "Performance" },
+          { "id": "security", "label": "Security" },
+          { "id": "consistency", "label": "Consistency" }
+        ]
+      },
+      {
+        "kind": "converge",
+        "node": {
+          "id": "design-decisions",
+          "label": "Design Decisions",
+          "detail": {
+            "responsibilities": [
+              "Weighs trade-offs given the constraints above",
+              "Chooses tools as a consequence, not a starting point"
+            ]
+          }
+        },
+        "emphasized": true
+      },
+      {
+        "kind": "fan",
+        "nodes": [
+          { "id": "backend", "label": "Backend" },
+          { "id": "data", "label": "Data" },
+          { "id": "infra", "label": "Infra" }
+        ]
+      },
+      {
+        "kind": "parallel",
+        "nodes": [
+          { "id": "backend-tech", "label": "Java / C++" },
+          { "id": "data-tech", "label": "SQL / NoSQL" },
+          { "id": "infra-tech", "label": "Cloud / Containers" }
+        ]
+      },
+      { "kind": "converge", "node": { "id": "system", "label": "System" }, "emphasized": true }
+    ]
+  },
+  "quote": "Technology is a consequence of engineering.",
+  "scenariosHeading": "The same mindset, different constraints",
+  "scenarios": [
+    {
+      "id": "transactional-system",
+      "problem": "Financial consistency",
+      "choices": ["PostgreSQL", "Transactions", "Idempotency", "Event-driven processing", "Java / Spring"]
+    },
+    {
+      "id": "identity-platform",
+      "problem": "Enterprise authentication",
+      "choices": ["Keycloak", "OAuth2 / OIDC", "Token-based security", "Wallet authentication"]
+    },
+    {
+      "id": "performance-sensitive-component",
+      "problem": "CPU / latency constraints",
+      "choices": ["C++", "Algorithmic optimization", "Memory efficiency"]
+    },
+    {
+      "id": "interactive-application",
+      "problem": "Rich user interaction",
+      "choices": ["React", "TypeScript", "Component architecture"]
+    }
+  ]
+}

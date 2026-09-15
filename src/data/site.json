@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "Frank Rodríguez Siret — Senior Backend Engineer & Tech Lead",
+    "description": "I engineer systems where complexity becomes predictable. Senior Backend Engineer, Tech Lead and competitive programmer working across Java, distributed systems, architecture, React and cloud infrastructure."
+  },
+  "nav": [
+    { "label": "ENGINEER", "href": "#hero" },
+    { "label": "WORK", "href": "#capabilities" },
+    { "label": "ALGORITHMS", "href": "#problem-solving" },
+    { "label": "CASE STUDIES", "href": "#case-studies" },
+    { "label": "LEADERSHIP", "href": "#leadership" },
+    { "label": "ABOUT", "href": "#about" }
+  ],
+  "socialLinks": [
+    { "label": "GitHub", "url": "https://github.com/FrankSiret", "icon": "github" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/in/frank-siret/", "icon": "linkedin" },
+    { "label": "Twitter", "url": "https://twitter.com/FrankSiret", "icon": "twitter" },
+    { "label": "Stack Overflow", "url": "https://stackoverflow.com/users/11278974/franksiret", "icon": "stack-overflow" },
+    { "label": "Instagram", "url": "https://www.instagram.com/franksiret/", "icon": "instagram" }
+  ],
+  "cvUrl": "/cv-frank-rodriguez-siret.pdf",
+  "ctaLabel": "Let's talk",
+  "ctaHref": "mailto:frank.siret@gmail.com"
+}
