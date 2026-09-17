@@ -14,8 +14,6 @@
   "socialLinks": [
     { "label": "GitHub", "url": "https://github.com/FrankSiret", "icon": "github" },
     { "label": "LinkedIn", "url": "https://linkedin.com/in/frank-siret/", "icon": "linkedin" },
-    { "label": "Twitter", "url": "https://twitter.com/FrankSiret", "icon": "twitter" },
-    { "label": "Stack Overflow", "url": "https://stackoverflow.com/users/11278974/franksiret", "icon": "stack-overflow" },
     { "label": "Instagram", "url": "https://www.instagram.com/franksiret/", "icon": "instagram" }
   ],
   "cvUrl": "cv-frank-rodriguez-siret.pdf",

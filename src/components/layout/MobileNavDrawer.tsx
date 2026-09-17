@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { X } from 'lucide-react'
+import { FileText, X } from 'lucide-react'
 import siteData from '@/data/site.json'
 import type { SiteData } from '@/types'
 import { getIcon } from '@/lib/icons'
@@ -64,6 +64,16 @@ export function MobileNavDrawer({ isOpen, onClose }: { isOpen: boolean; onClose:
                   )
                 })}
               </div>
+              <LinkButton
+                href={site.cvUrl}
+                target="_blank"
+                rel="noreferrer"
+                variant="secondary"
+                className="justify-center"
+              >
+                <FileText className="h-4 w-4" />
+                Download CV
+              </LinkButton>
               <LinkButton href={site.ctaHref} variant="secondary" className="justify-center">
                 {site.ctaLabel} →
               </LinkButton>
